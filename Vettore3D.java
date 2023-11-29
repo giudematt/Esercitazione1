@@ -13,7 +13,9 @@
  */
 
 /**
- * Implementazione di un vettore tridimensionale in Java
+ * Esempio di implementazione di un vettore tridimensionale in Java.
+ * NB: Non ho aggiunto un metodo main, bensì ho aggiunto una classe VettoreTester 
+ * per interagire con la classe Vettore3D
  * 
  * @author Giuseppe De Matteis
  */
@@ -72,7 +74,7 @@ public class Vettore3D {
 
     // Norma o modulo di un vettore
     /**
-     * Restituisce il <b>modulo</b> di un vettore.
+     * Restituisce il <b>modulo</b> di un {@link Vettore3D}.
      * 
      * @return <I>Modulo</i> in formato <b>float</b>
      */
@@ -82,9 +84,9 @@ public class Vettore3D {
 
     // Somma di due vettori
     /**
-     * Restituisce la <b>somma</b> di due vettori.
+     * Restituisce la <b>somma</b> di due {@link Vettore3D}.
      * 
-     * @param vettore : vettore da sommare al primo
+     * @param vettore : <b>Vettore3D</b> da sommare al primo
      * @return <i>Vettore somma</i> di tipo <b>Vettore3D</b>
      */
     public Vettore3D add(Vettore3D vettore) {
@@ -93,9 +95,9 @@ public class Vettore3D {
 
     // Prodotto per uno scalare
     /**
-     * Restituisce il <b>prodotto</b> di un vettore per uno scalare.
+     * Restituisce il <b>prodotto</b> di un {@link Vettore3D} per uno scalare.
      * 
-     * @param scalare : scalare da moltiplicare
+     * @param scalare : scalare da moltiplicare di tipo <b>float</b>
      * @return <i>Prodoto per scalare</i> di tipo <b>Vettore3D</b>
      */
     public Vettore3D scalare(float scalare) {
@@ -104,9 +106,9 @@ public class Vettore3D {
 
     // Opposto di un vettore
     /**
-     * Restituisce il vettore <b>opposto</b> di un vettore assegnato.
+     * Restituisce il vettore <b>opposto</b> di un {@link Vettore3D} assegnato.
      * 
-     * @param vettore : da inserire per ottenere l'opposto
+     * @param vettore : <b>Vettore3D</b> da inserire per ottenere l'opposto
      * @return <i>Prodoto per scalare</i> di tipo <b>Vettore3D</b>
      */
     public Vettore3D scalare(Vettore3D vettore) {
@@ -115,9 +117,9 @@ public class Vettore3D {
 
     // Prodotto scalare
     /**
-     * Restituisce il <b>prodotto scalare</b> di due vettori.
+     * Restituisce il <b>prodotto scalare</b> di due {@link Vettore3D}.
      * 
-     * @param vettore : vettore da moltiplicare
+     * @param vettore : <b>Vettore3D</b> da moltiplicare
      * @return <i>Prodoto scalare</i> di tipo <b>float</b>
      */
     public float prodottoScalare(Vettore3D vettore) {
@@ -126,9 +128,9 @@ public class Vettore3D {
 
     // Calcolare l'angolo convesso formato da due vettori
     /**
-     * Restituisce l'<b>angolo convesso</b> tra due vettori.
+     * Restituisce l'<b>angolo convesso</b> tra due {@link Vettore3D}.
      * 
-     * @param vettore : secondo vettore con cui calcolare l'angolo
+     * @param vettore : secondo <b>Vettore3D</b> con cui calcolare l'angolo
      * @return <i>angolo in radianti</i> di tipo <b>float</b>
      */
     public float angolo(Vettore3D vettore) {
@@ -138,9 +140,9 @@ public class Vettore3D {
     // DA MIGLIORARE
     // Prodotto vettoriale
     /**
-     * Restituisce il <b>prodotto vettoriale</b> di due vettori.
+     * Restituisce il <b>prodotto vettoriale</b> di due {@link Vettore3D}.
      * 
-     * @param vettore : vettore da moltiplicare
+     * @param vettore : <b>Vettore3D</b> da moltiplicare
      * @return <i>Prodotto vettoriale</i> di tipo <b>Vettore3D</b>
      */
     public Vettore3D prodottoVettoriale(Vettore3D vettore) {
@@ -150,9 +152,9 @@ public class Vettore3D {
 
     // toString
     /**
-     * Restituisce un vettore scritto.
+     * Restituisce un {@link Vettore3D} scritto.
      * 
-     * @return Vettore in formato <b>String</b>
+     * @return Vettore3D in formato <b>String</b>
      */
     public String toString() {
         return new String("(" + x + ", " + y + ", " + z + ")");
